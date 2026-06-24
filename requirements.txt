@@ -1,0 +1,24 @@
+# --- Telegram -------------------------------------------------------------
+# python-telegram-bot 20.x predates Python 3.14; >=20.8 ships 3.14 wheels.
+python-telegram-bot>=20.8
+
+# --- Configuration --------------------------------------------------------
+python-dotenv>=1.0.0
+
+# --- AI providers ---------------------------------------------------------
+groq>=0.11.0
+google-generativeai>=0.7.2
+
+# --- Scraping -------------------------------------------------------------
+beautifulsoup4>=4.12.2
+requests>=2.31.0
+# playwright 1.40 pins greenlet==3.0.1, which fails to compile on Python 3.14.
+# >=1.49 depends on a greenlet release with prebuilt 3.14 wheels.
+playwright>=1.49.0
+
+# --- Text-to-Speech -------------------------------------------------------
+edge-tts>=6.1.9
+pydub>=0.25.1
+
+# --- Async file / utils ---------------------------------------------------
+aiofiles>=23.2.1
